@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tienda Minimalista - Administración</div>
+            <div id="logout">Cerrar sesión</div>
+            <a href="index.html" class="back-link">Volver a la página principal</a>
+        </nav>
+    </header>
+    <main>
+        <section id="admin-panel">
+            <h2>Productos</h2>
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                        <th>Talla</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos se generarán aquí -->
+                </tbody>
+            </table>
+
+            <h2>Agregar producto</h2>
+            <form id="addProductForm">
+                <input type="text" id="tipo" placeholder="Tipo">
+                <input type="text" id="marca" placeholder="Marca">
+                <input type="text" id="color" placeholder="Color">
+                <input type="text" id="talla" placeholder="Talla">
+                <input type="number" id="precio" placeholder="Precio" step="0.01">
+                <input type="number" id="stock" placeholder="Stock">
+                <input type="text" id="imagen" placeholder="URL de la imagen">
+                <button type="submit" id="agregarProducto">Agregar producto</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda Minimalista. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="admin.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#verCarrito {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de inicio de sesión de administrador */
+.admin-login {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-login input {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.admin-login button {
+  background-color: #fff;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.producto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#carritoContainer {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
